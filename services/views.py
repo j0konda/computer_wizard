@@ -8,7 +8,7 @@ from services.models import ServiceComputer
 def service_views(request):
     servicesComputer= ServiceComputer.objects.all()
     context = {'servicesComputer': servicesComputer }
-    return render(request, '/services_computer_wizard.html', context)
+    return render(request, 'services_computer_wizard.html', context)
 
 
 
